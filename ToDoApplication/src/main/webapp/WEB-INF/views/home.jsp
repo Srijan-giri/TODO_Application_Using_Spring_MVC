@@ -43,13 +43,15 @@
 				<c:if test="${page== 'home' }">
 					<h1 class="text-center">All TODOS</h1>
 					<c:forEach items="${todos }" var="item">
-						<div class="card mt-2" style="width: 20rem;">
+                             <div class="card mt-2 " style="width: 100 %">
 							<div class="card-body">
 								<h5 class="card-title">Name : ${item.todoTitle }</h5>
 								<h6 class="card-subtitle mb-2 text-muted">Date : ${item.todoDate }</h6>
 								<p class="card-text">${item.todoContent }</p>
 							</div>
 						</div>
+                           
+						
 
 					</c:forEach>
 				</c:if>

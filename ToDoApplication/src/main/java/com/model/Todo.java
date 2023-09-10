@@ -1,6 +1,7 @@
 package com.model;
 import java.util.*;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,6 +14,7 @@ public class Todo {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String todoTitle;
+	@Column(columnDefinition="TEXT")
 	private String todoContent;
 	private Date todoDate;
 	
